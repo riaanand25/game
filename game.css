@@ -1,0 +1,112 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back
+{
+    width: 40%;
+    height: 70vh;
+    background-color:rgb(241, 173, 185);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.box 
+{
+    width: 30px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    animation: right 5s  infinite alternate ease-in-out ;
+}
+@keyframes right {
+    0%
+    {
+        top: 55%;
+
+    }
+    50%
+    {
+        top: 0%;
+    }
+    100%
+    {
+        top: 55%;
+    }
+}
+.box2
+{
+    width: 30px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    animation: left 5s  infinite alternate ease-in-out ;
+}
+@keyframes left {
+    0%
+    {
+        top: 0;
+
+    }
+    50%
+    {
+        top: 55%;
+    }
+    100%
+    {
+        top: 0;
+    }
+   
+}
+.circle
+{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: circle 4s infinite ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+@keyframes circle {
+    0%
+    {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    }
+
+
+
+    50%
+    {
+       position: absolute;
+       left: 86%;
+       top: 50%;
+
+    }
+    100%
+    {
+        top: 50%;
+        left:  5%;
+
+    }
+}
+body{
+    background-color: hotpink;
+}
+.main
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
